@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:item_name": {
+              "translate": "item.babel.example_wiki"
+            },
+            "minecraft:lore": [
+              [
+                {
+                  "text": "0 ",
+                  "color": "white",
+                  "font": "babel:icon",
+                  "italic": false
+                },
+                {
+                  "translate": "ui.babel.title",
+                  "color": "white",
+                  "font": "babel:tooltip",
+                  "italic": false
+                }
+              ]
+            ],
+            "minecraft:custom_data": {
+              "babel": {
+                "id": "example_wiki",
+                "wiki": {
+                  "id": "babel:example"
+                }
+              },
+              "smithed": {
+                "ignore": {
+                  "functionality": true,
+                  "crafting": true
+                }
+              }
+            },
+            "minecraft:item_model": "babel:example_wiki",
+            "minecraft:tooltip_style": "babel:babel",
+            "minecraft:rarity": "common",
+            "!minecraft:written_book_content": {},
+            "enchantment_glint_override": false
+          }
+        }
+      ]
+    }
+  ]
+}

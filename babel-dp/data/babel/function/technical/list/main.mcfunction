@@ -1,0 +1,1 @@
+tellraw @s [{translate:"ui.babel.load.announce",color:"gray",font:"minecraft:default",with:[[{text:"0 ",color:"white",font:"babel:icon"},{translate:"ui.babel.title",color:"white",font:"babel:tooltip"}],{"translate":"ui.babel.version",color:"gray",font:"minecraft:default"}]}]

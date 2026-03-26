@@ -1,0 +1,19 @@
+{
+  "pack": {
+    "min_format": [101,1],
+    "max_format": [101,1],
+    "description": [
+      {
+        "text": "📚 Babel 📚",
+        "color": "#d18a2e"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "By Lead",
+        "color": "#eed54a"
+      }
+    ]
+  }
+}
