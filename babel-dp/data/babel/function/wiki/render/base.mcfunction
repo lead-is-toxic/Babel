@@ -3,7 +3,8 @@ data modify storage babel:temp root.elements set value [\
     {\
         "text": "",\
         "font": "foo:bar",\
-        "color": "white"\
+        "color": "white",\
+        "shadow_color": [0, 0, 0, 0]\
     },\
    [{\
         "text": "background",\
@@ -53,11 +54,13 @@ data modify storage babel:temp root.elements set value [\
             "action": "run_command",\
             "command": "trigger babel.trigger set -2"\
         }\
-    }\
-    ]]
+    }],\
+    "\n"\
+    ]
 
 ## Set values from the wiki that is being rendered
-data modify storage babel:temp root.elements[0].color set from storage babel:temp root.wiki.text_color
+data modify storage babel:temp root.elements[0].color set from storage babel:temp root.wiki.colors.text
+data modify storage babel:temp root.elements[0].shadow_color set from storage babel:temp root.wiki.colors.text_shadow
 data modify storage babel:temp root.elements[0].font set from storage babel:temp root.wiki.fonts.text
 
 data modify storage babel:temp root.elements[1][0].text set from storage babel:temp root.wiki.elements.background.character

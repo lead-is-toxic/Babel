@@ -2,6 +2,7 @@ data remove storage babel:temp root
 
 ## Set default values
 data modify storage babel:temp root.manifest set value {\
+    body_width: 120,\
     spaces: {\
         before_contents: 0,\
         after_contents: 0\
@@ -9,6 +10,10 @@ data modify storage babel:temp root.manifest set value {\
     fonts: {\
         text: "minecraft:default",\
         text_alt: "minecraft:default"\
+    },\
+    colors: {\
+        text: "black",\
+        text_shadow: [0, 0, 0, 0]\
     },\
     pages: []\
     }

@@ -1,1 +1,0 @@
-$data modify storage babel:temp root.manifest set value $(template)

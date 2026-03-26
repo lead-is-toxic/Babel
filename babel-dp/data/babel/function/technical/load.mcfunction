@@ -11,8 +11,5 @@ schedule function babel:technical/list/scheduled 1s
 ## Clear database before 
 data remove storage babel:database wiki
 
-## Manifest page templates - there is a good reason this comes before manifesting wikis, trust me
-function #babel:manifest/page_template
-
 ## Manifest wikis - put all wiki manifests in here
 function #babel:manifest/wiki

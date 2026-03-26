@@ -13,7 +13,7 @@
     "item.babel.example_wiki": "Example Wiki",
     
     "wiki.babel.page.page_template_monologue.title": "babel:monologue Page Template",
-    "wiki.babel.page.page_template_monologue.body": "This page uses the premade babel:monologue page template. This template only consists of text, which in practice is actually not something you will probably be doing often. It exists in case you need it, since having to implement your own purely for text would probably make you feel like a dumbass.",
+    "wiki.babel.page.page_template_monologue.body": "This page uses the premade babel:monologue page template. This template only consists of text, which in practice is actually not something you will probably be doing often. It exists in case you need it.",
     "wiki.babel.page.page_template_item.title": "babel:item Page Template",
     "wiki.babel.page.page_template_item.body": "This page uses the premade babel:item page template. This template displays up to 5 specified items, which can be inline or referenced from either a vanilla item ID or loot table.",
     "wiki.babel.page.page_template_mob.title": "babel:mob Page Template",

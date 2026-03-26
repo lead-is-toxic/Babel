@@ -7,14 +7,14 @@ $dialog show @s {\
       "contents": [\
         {"translate": "babel.line.$(lines_before_contents)"},$(elements),{"translate": "babel.line.$(lines_after_contents)"}\
       ],\
-      "width": 118\
+      "width": $(body_width)\
     },\
     {\
       "type": "minecraft:plain_message",\
       "contents": {\
         "text": ""\
       },\
-      "width": 200\
+      "width": 400\
     }\
   ],\
   "pause": false,\
