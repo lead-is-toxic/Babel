@@ -8,9 +8,9 @@ function babel:api/manifest/wiki {wiki:{\
     },\
     fonts: {\
         ui: "babel:wiki/example",\
-        text: "minecraft:default",\
-        text_alt: "babel:5"\
+        text: "minecraft:default"\
     },\
+    text_color: "#9a7256",\
     elements: {\
         background: {character: "\ua001", width: 146},\
         previous_button: {character: "\ua002", width: 18},\
@@ -23,6 +23,9 @@ function babel:api/manifest/wiki {wiki:{\
         index_background: {character: "\ua009", width: 88}\
     }}}
 
+## Creates a page template
+## Explain later
+## Don't forget to mention that page templates are independant of wiki
 function babel:api/manifest/page_template {page_template:{\
     id: "babel:monologue",\
     aliases: [\
@@ -31,11 +34,13 @@ function babel:api/manifest/page_template {page_template:{\
         ],\
     elements: [\
         "top_header",\
-        {id: "body", type: "text_component", required: true, fields: {"color": "$(default)", "font": "$(text)"}},\
+        {id: "body", type: "text_component", fields: {}},\
         "bottom_header"\
         ]\
     }}
 
+## Creates a page
+## Explain later
 function babel:api/manifest/page {page:{\
     wiki: "babel:example",\
     template: "babel:monologue",\

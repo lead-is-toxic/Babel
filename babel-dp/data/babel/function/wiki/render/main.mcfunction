@@ -19,7 +19,7 @@ data modify storage babel:temp root.macro merge from storage babel:temp root.wik
 data modify storage babel:temp root.macro.elements set from storage babel:temp root.elements
 data modify storage babel:temp root.macro.wiki_name set from storage babel:temp root.wiki_name
 function babel:wiki/render/output with storage babel:temp root.macro
-# data remove storage babel:temp root.macro
+data remove storage babel:temp root.macro
 
 ## Post-render clarity
-# data remove storage babel:temp root
+data remove storage babel:temp root

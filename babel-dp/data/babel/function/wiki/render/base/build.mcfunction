@@ -1,14 +1,21 @@
 ## Set placeholder values for the base of the page
-data modify storage babel:temp root.elements set value [[\
+data modify storage babel:temp root.elements set value [\
     {\
+        "text": "",\
+        "font": "foo:bar",\
+        "color": "white"\
+    },\
+   [{\
         "text": "background",\
         "font": "foo:bar",\
+        "color": "white",\
         "shadow_color": [0, 0, 0, 0]\
     },\
     "\n",\
     {\
         "text": "previous_button",\
         "font": "foo:bar",\
+        "color": "white",\
         "shadow_color": [0, 0, 0, 0],\
         "hover_event": {\
             "action": "show_text",\
@@ -22,6 +29,7 @@ data modify storage babel:temp root.elements set value [[\
     {\
         "text": "exit_button",\
         "font": "foo:bar",\
+        "color": "white",\
         "shadow_color": [0, 0, 0, 0],\
         "hover_event": {\
             "action": "show_text",\
@@ -35,6 +43,7 @@ data modify storage babel:temp root.elements set value [[\
     {\
         "text": "previous_button",\
         "font": "foo:bar",\
+        "color": "white",\
         "shadow_color": [0, 0, 0, 0],\
         "hover_event": {\
             "action": "show_text",\
@@ -48,14 +57,17 @@ data modify storage babel:temp root.elements set value [[\
     ]]
 
 ## Set values from the wiki that is being rendered
-data modify storage babel:temp root.elements[0][0].text set from storage babel:temp root.wiki.elements.background.character
-data modify storage babel:temp root.elements[0][0].font set from storage babel:temp root.wiki.fonts.ui
+data modify storage babel:temp root.elements[0].color set from storage babel:temp root.wiki.text_color
+data modify storage babel:temp root.elements[0].font set from storage babel:temp root.wiki.fonts.text
 
-data modify storage babel:temp root.elements[0][2].text set from storage babel:temp root.wiki.elements.previous_button.character
-data modify storage babel:temp root.elements[0][2].font set from storage babel:temp root.wiki.fonts.ui
+data modify storage babel:temp root.elements[1][0].text set from storage babel:temp root.wiki.elements.background.character
+data modify storage babel:temp root.elements[1][0].font set from storage babel:temp root.wiki.fonts.ui
 
-data modify storage babel:temp root.elements[0][3].text set from storage babel:temp root.wiki.elements.close_button.character
-data modify storage babel:temp root.elements[0][3].font set from storage babel:temp root.wiki.fonts.ui
+data modify storage babel:temp root.elements[1][2].text set from storage babel:temp root.wiki.elements.previous_button.character
+data modify storage babel:temp root.elements[1][2].font set from storage babel:temp root.wiki.fonts.ui
 
-data modify storage babel:temp root.elements[0][4].text set from storage babel:temp root.wiki.elements.next_button.character
-data modify storage babel:temp root.elements[0][4].font set from storage babel:temp root.wiki.fonts.ui
+data modify storage babel:temp root.elements[1][3].text set from storage babel:temp root.wiki.elements.close_button.character
+data modify storage babel:temp root.elements[1][3].font set from storage babel:temp root.wiki.fonts.ui
+
+data modify storage babel:temp root.elements[1][4].text set from storage babel:temp root.wiki.elements.next_button.character
+data modify storage babel:temp root.elements[1][4].font set from storage babel:temp root.wiki.fonts.ui

@@ -1,1 +1,0 @@
-$data modify storage babel:temp root.wiki set from storage babel:database wiki.$(wiki)
