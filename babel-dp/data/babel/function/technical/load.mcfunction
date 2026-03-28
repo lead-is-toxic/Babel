@@ -3,6 +3,9 @@ scoreboard objectives add babel.dummy dummy
 scoreboard objectives add babel.trigger trigger
 scoreboard objectives add babel.use_written_book minecraft.used:minecraft.written_book
 
+## Score for the example wiki
+scoreboard objectives add babel.wiki.example dummy
+
 ## Schedule chat list
 schedule function babel:technical/list/scheduled 1s
 

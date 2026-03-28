@@ -1,1 +1,0 @@
-$data modify storage babel:database wiki.$(wiki).pages append from storage babel:temp root.manifest

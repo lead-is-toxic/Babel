@@ -1,12 +1,14 @@
 ## Creates a wiki
 ## Explain later
 ## Don't forget to explain defaults
-function babel:api/manifest/wiki {wiki:{\
+function babel:api/manifest/wiki {\
     id: "babel:example",\
+    wiki: {\
+    scoreboard: "babel.wiki.example",\
     body_width: 120,\
     offsets: {\
         lines_before_contents: 0,\
-        lines_after_contents: 5\
+        lines_after_contents: 0\
     },\
     fonts: {\
         ui: "babel:wiki/example",\
@@ -31,18 +33,18 @@ function babel:api/manifest/wiki {wiki:{\
 ## Creates a page template
 ## Explain later
 ## Don't forget to mention that page templates are independant of wiki
+## Also don't forget alias prefixes and suffixes exist
 function babel:api/manifest/page_template {page_template:{\
     id: "babel:monologue",\
     aliases: [\
         {element: "title", alias: "title", "target": "translate"},\
         {element: "body", alias: "translate", "target": "translate"},\
-        {element: "body", alias: "text", "target": "text"},\
         {element: "body", alias: "with", "target": "with"}\
         ],\
     elements: [\
-        {id: "title", type: "text_component", fields: {}},\
+        {id: "title", type: "text_component", structure: {}},\
         {type: "header", header: "top_header"},\
-        {id: "body", type: "text_component", fields: {}},\
+        {id: "body", type: "text_component", structure: {}},\
         {type: "header", header: "bottom_header"}\
         ]\
     }}
@@ -53,6 +55,24 @@ function babel:api/manifest/page {\
     wiki: "babel:example",\
     template: "babel:monologue",\
     page: {\
+    offsets: {\
+        lines_before_contents: 0,\
+        lines_after_contents: 3\
+    },\
+    contents: {\
         title: "wiki.babel.page.page_template_monologue.title",\
         translate: "wiki.babel.page.page_template_monologue.body"\
-    }}
+    }}}
+
+function babel:api/manifest/page {\
+    wiki: "babel:example",\
+    template: "babel:monologue",\
+    page: {\
+    offsets: {\
+        lines_before_contents: 0,\
+        lines_after_contents: 3\
+    },\
+    contents: {\
+        title: "TITLE",\
+        translate: "RELATIVELY LONG BODY SO THAT THE ENTIRE PAGE RENDERS AND I CAN WAIT A LITTLE LONGER BEFORE IMPLEMENTING LINE BREAK OVERRIDES IN PAGES THIS PROBABLY ISN'T LONG ENOUGH YET BUT I'M NOT ENTIRELY SURE"\
+    }}}

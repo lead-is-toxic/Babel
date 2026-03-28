@@ -3,7 +3,7 @@
     { "type": "bitmap", "file": "babel:gui/wiki/example/background.png", "ascent": 4, "height": 182, "chars": [ "\ua001" ] },
     { "type": "bitmap", "file": "babel:gui/wiki/example/widgets.png", "ascent": -140, "height": 16, "chars": [ "\ua002\ua003\ua004\ua005" ] },
     { "type": "bitmap", "file": "babel:gui/wiki/example/frame.png", "ascent": 4, "height": 20, "chars": [ "\ua006" ] },
-    { "type": "bitmap", "file": "babel:gui/wiki/example/header.png", "ascent": 7, "height": 8, "chars": [ "\ua007", "\ua008" ] },
+    { "type": "bitmap", "file": "babel:gui/wiki/example/header.png", "ascent": 8, "height": 8, "chars": [ "\ua007", "\ua008" ] },
     { "type": "bitmap", "file": "babel:gui/wiki/example/index.png", "ascent": 4, "height": 110, "chars": ["\ua009"] }
   ]
 }

@@ -1,0 +1,1 @@
+$data modify storage babel:temp root.page set from storage babel:temp root.wiki.pages[$(score)]
